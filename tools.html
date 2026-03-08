@@ -210,6 +210,372 @@
                         attack to verify if your rules work.
                     </p>
                 </div>
+
+                <div
+                    style="margin-top: 2rem; padding: 2rem; border-left: 4px solid var(--accent); background: rgba(255,255,255,0.01); border-radius: 0 12px 12px 0;">
+                    <h3 style="color: var(--text-main); margin-bottom: 1rem; font-size: 1.3rem;">Extra Learning
+                        Materials</h3>
+                    <ul style="color: var(--text-muted); line-height: 1.8; margin-left: 1.5rem; font-size: 1rem;">
+                        <li><strong style="color: var(--accent);">Practical Exercise:</strong> Find a recent ransomware
+                            IOC in the Threat Library. Use a VM to write a YARA rule detecting its signature.</li>
+                        <li><strong style="color: var(--accent);">Integration:</strong> Learn how to pipe OpenHunting
+                            threat feeds directly into your SIEM (Splunk or Elastic) via API scripts.</li>
+                        <li><strong style="color: var(--accent);">Recommended Reading:</strong> "The Art of Threat
+                            Hunting" - Focus on hypothesis-driven hunting using OpenHunting reports as a base.</li>
+                    </ul>
+                </div>
+            </div>
+        </details>
+
+        <!-- AARDVARK -->
+        <details class="tool-box animate"
+            style="animation-delay: 0.4s; width: 100%; border: 1px solid var(--border-color); border-radius: 12px; background: rgba(255, 255, 255, 0.02); margin-top: 1.5rem; overflow: hidden; cursor: default;">
+            <summary
+                style="display: flex; justify-content: space-between; align-items: center; padding: 2rem; cursor: pointer; user-select: none;">
+                <h2
+                    style="font-size: 2rem; color: var(--text-main); margin: 0; display: flex; align-items: center; gap: 1rem;">
+                    Aardvark (OpenAI Codex Security)
+                    <svg class="dropdown-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        style="transition: transform 0.3s ease; color: var(--text-muted);">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </h2>
+                <span
+                    style="font-size: 0.9rem; color: var(--text-muted); background: rgba(255,255,255,0.05); padding: 0.3rem 0.8rem; border-radius: 20px;">AI
+                    Secure Coding</span>
+            </summary>
+
+            <div style="padding: 0 2rem 2rem 2rem; border-top: 1px solid var(--border-color); margin-top: 0.5rem;">
+                <p
+                    style="color: var(--text-muted); line-height: 1.8; margin-top: 1.5rem; margin-bottom: 2rem; font-size: 1.1rem;">
+                    <strong>Aardvark (Codex Security)</strong> harnesses OpenAI's large language models to actively
+                    identify, validate, and propose fixes for deep logic vulnerabilities inside large codebases.
+                    Originally codenamed Aardvark, it severely cuts down on false positives by simulating attacks in a
+                    sandbox and generating tailored patches.
+                </p>
+
+                <div
+                    style="background: rgba(178, 195, 167, 0.05); border: 1px solid rgba(178, 195, 167, 0.2); padding: 2rem; border-radius: 12px;">
+                    <h3 style="color: var(--accent); margin-bottom: 1.5rem; font-size: 1.5rem;">Learning &
+                        Implementation Guide</h3>
+                    <h4 style="color: var(--text-main); margin-bottom: 0.5rem; font-size: 1.1rem;">Phase 1: Code
+                        Ingestion & Modeling</h4>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem; line-height: 1.6;">During early CI/CD
+                        pipeline stages, the tool scans code commits and generates threat models based on context,
+                        identifying variables and logic structures that might be exposed.</p>
+                    <h4 style="color: var(--text-main); margin-bottom: 0.5rem; font-size: 1.1rem;">Phase 2:
+                        Vulnerability Simulation</h4>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem; line-height: 1.6;">Before flagging a
+                        developer, Codex sets up sandboxed runtimes to dynamically attempt edge-case exploits, severely
+                        reducing noise and discarding false positives natively.</p>
+                    <h4 style="color: var(--text-main); margin-bottom: 0.5rem; font-size: 1.1rem;">Phase 3: Automated
+                        Remediation</h4>
+                    <p style="color: var(--text-muted); line-height: 1.6;">Developers review the finalized PRs raised by
+                        the AI, which contain perfectly tailored patches to seal the logic flaw—requiring only a human
+                        sign-off rather than manual re-writing.</p>
+                </div>
+
+                <div
+                    style="margin-top: 2rem; padding: 2rem; border-left: 4px solid var(--accent); background: rgba(255,255,255,0.01); border-radius: 0 12px 12px 0;">
+                    <h3 style="color: var(--text-main); margin-bottom: 1rem; font-size: 1.3rem;">Extensive Study
+                        Resources</h3>
+                    <ul style="color: var(--text-muted); line-height: 1.8; margin-left: 1.5rem; font-size: 1rem;">
+                        <li><strong style="color: var(--accent);">Prompt Engineering for Security:</strong> Explore how
+                            language models interpret code syntax versus semantic logic. Practice crafting system
+                            prompts designed for vulnerability detection.</li>
+                        <li><strong style="color: var(--accent);">Sandbox Escapes:</strong> Study the architecture of
+                            how Aardvark creates isolated environments. What are the limits of dynamic LLM code
+                            execution safely?</li>
+                        <li><strong style="color: var(--accent);">Case Study:</strong> Review the open-sourced examples
+                            of Aardvark patching SQLi vs NoSQLi vulnerabilities dynamically in JavaScript and Python
+                            repos.</li>
+                    </ul>
+                </div>
+            </div>
+        </details>
+
+        <!-- PENLIGENT AI -->
+        <details class="tool-box animate"
+            style="animation-delay: 0.5s; width: 100%; border: 1px solid var(--border-color); border-radius: 12px; background: rgba(255, 255, 255, 0.02); margin-top: 1.5rem; overflow: hidden; cursor: default;">
+            <summary
+                style="display: flex; justify-content: space-between; align-items: center; padding: 2rem; cursor: pointer; user-select: none;">
+                <h2
+                    style="font-size: 2rem; color: var(--text-main); margin: 0; display: flex; align-items: center; gap: 1rem;">
+                    Penligent AI
+                    <svg class="dropdown-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        style="transition: transform 0.3s ease; color: var(--text-muted);">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </h2>
+                <span
+                    style="font-size: 0.9rem; color: var(--text-muted); background: rgba(255,255,255,0.05); padding: 0.3rem 0.8rem; border-radius: 20px;">Agentic
+                    Pentesting</span>
+            </summary>
+
+            <div style="padding: 0 2rem 2rem 2rem; border-top: 1px solid var(--border-color); margin-top: 0.5rem;">
+                <div style="display: flex; justify-content: flex-end; margin-bottom: 2rem; margin-top: 1.5rem;">
+                    <a href="https://penligent.ai/" target="_blank" rel="noopener noreferrer"
+                        style="padding: 0.5rem 1rem; border: 1px solid var(--accent); color: var(--accent); border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.85rem; transition: all 0.2s ease;">Visit
+                        Platform ↗</a>
+                </div>
+                <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 2rem; font-size: 1.1rem;">
+                    <strong>Penligent AI</strong> acts as an advanced "agentic AI hacker" that performs end-to-end
+                    autonomous penetration testing. It seamlessly integrates over 200 standard tools (like Nmap,
+                    Metasploit, and Burp Suite) into unified workflows to orchestrate, execute, and document heavy
+                    attack chains automatically.
+                </p>
+
+                <div
+                    style="background: rgba(178, 195, 167, 0.05); border: 1px solid rgba(178, 195, 167, 0.2); padding: 2rem; border-radius: 12px;">
+                    <h3 style="color: var(--accent); margin-bottom: 1.5rem; font-size: 1.5rem;">Learning & Operations
+                        Guide</h3>
+                    <h4 style="color: var(--text-main); margin-bottom: 0.5rem; font-size: 1.1rem;">Phase 1: Asset
+                        Enumeration</h4>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem; line-height: 1.6;">The AI connects to the
+                        target infrastructure and independently queries Nmap and specialized scanners to map the attack
+                        surface and surface misconfigurations.</p>
+                    <h4 style="color: var(--text-main); margin-bottom: 0.5rem; font-size: 1.1rem;">Phase 2: Exploit
+                        Splicing</h4>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem; line-height: 1.6;">Once an exposed CVE or
+                        web vulnerability is detected, Penligent formulates an attack path, testing variations of SQLi,
+                        SSRF, or RCE configurations iteratively via integrated frameworks until successful execution.
+                    </p>
+                    <h4 style="color: var(--text-main); margin-bottom: 0.5rem; font-size: 1.1rem;">Phase 3: Cyber Range
+                        & Compliance</h4>
+                    <p style="color: var(--text-muted); line-height: 1.6;">The platform auto-compiles the entire action
+                        history into pristine ISO 27001 / PCI-DSS compliance reports, while allowing junior testers to
+                        practice replicating the AI's success manually in their built-in Cyber Range sandbox.</p>
+                </div>
+
+                <div
+                    style="margin-top: 2rem; padding: 2rem; border-left: 4px solid var(--accent); background: rgba(255,255,255,0.01); border-radius: 0 12px 12px 0;">
+                    <h3 style="color: var(--text-main); margin-bottom: 1rem; font-size: 1.3rem;">Mastering Agentic
+                        Workflows</h3>
+                    <ul style="color: var(--text-muted); line-height: 1.8; margin-left: 1.5rem; font-size: 1rem;">
+                        <li><strong style="color: var(--accent);">Hands-on Lab:</strong> Use Penligent's Cyber Range to
+                            observe the AI exploiting an outdated WordPress plugin, then repeat the exact attack chain
+                            manually using WPScan.</li>
+                        <li><strong style="color: var(--accent);">Tool Chaining Logic:</strong> Study how Penligent
+                            parses Nmap XML outputs and automatically feeds them into Metasploit modules without human
+                            intervention.</li>
+                        <li><strong style="color: var(--accent);">Compliance Mapping:</strong> Learn the difference
+                            between raw vulnerability data and executive PCI-DSS reports. Observe how the AI summarizes
+                            technical risk.</li>
+                    </ul>
+                </div>
+            </div>
+        </details>
+
+        <!-- CAI -->
+        <details class="tool-box animate"
+            style="animation-delay: 0.6s; width: 100%; border: 1px solid var(--border-color); border-radius: 12px; background: rgba(255, 255, 255, 0.02); margin-top: 1.5rem; overflow: hidden; cursor: default;">
+            <summary
+                style="display: flex; justify-content: space-between; align-items: center; padding: 2rem; cursor: pointer; user-select: none;">
+                <h2
+                    style="font-size: 2rem; color: var(--text-main); margin: 0; display: flex; align-items: center; gap: 1rem;">
+                    Cybersecurity AI (CAI)
+                    <svg class="dropdown-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        style="transition: transform 0.3s ease; color: var(--text-muted);">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </h2>
+                <span
+                    style="font-size: 0.9rem; color: var(--text-muted); background: rgba(255,255,255,0.05); padding: 0.3rem 0.8rem; border-radius: 20px;">AI
+                    Cyber Framework</span>
+            </summary>
+
+            <div style="padding: 0 2rem 2rem 2rem; border-top: 1px solid var(--border-color); margin-top: 0.5rem;">
+                <p
+                    style="color: var(--text-muted); line-height: 1.8; margin-top: 1.5rem; margin-bottom: 2rem; font-size: 1.1rem;">
+                    <strong>Cybersecurity AI (CAI)</strong> represents both a broad discipline and a specific
+                    open-source automation framework granting ethical hackers API access to over 300 different
+                    security-oriented AI models. It democratizes machine learning so defensive teams can detect
+                    anomalies in logs at speeds incomprehensible to manual human parsing.
+                </p>
+
+                <div
+                    style="background: rgba(178, 195, 167, 0.05); border: 1px solid rgba(178, 195, 167, 0.2); padding: 2rem; border-radius: 12px;">
+                    <h3 style="color: var(--accent); margin-bottom: 1.5rem; font-size: 1.5rem;">Tactical Deployment
+                        Guide</h3>
+                    <h4 style="color: var(--text-main); margin-bottom: 0.5rem; font-size: 1.1rem;">Phase 1: Log
+                        Funneling</h4>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem; line-height: 1.6;">Ingest massive
+                        quantities of network traffic, firewall alerts, and endpoint telemetry into the CAI
+                        architecture. The algorithms will automatically establish a "baseline of normalcy".</p>
+                    <h4 style="color: var(--text-main); margin-bottom: 0.5rem; font-size: 1.1rem;">Phase 2: Pattern
+                        Recognition</h4>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem; line-height: 1.6;">Using high-speed
+                        correlation, the framework spots obfuscated behavioral traits common to polymorphic malware or
+                        stealthy phishing spear-campaigns that evade traditional static signatures.</p>
+                    <h4 style="color: var(--text-main); margin-bottom: 0.5rem; font-size: 1.1rem;">Phase 3: Automated
+                        Incident Response (IR)</h4>
+                    <p style="color: var(--text-muted); line-height: 1.6;">Once a critical threat is verified, the AI
+                        agent dynamically spins up firewall isolation protocols and zeroes out affected endpoints before
+                        human analysts even wake up to triage the damage.</p>
+                </div>
+
+                <div
+                    style="margin-top: 2rem; padding: 2rem; border-left: 4px solid var(--accent); background: rgba(255,255,255,0.01); border-radius: 0 12px 12px 0;">
+                    <h3 style="color: var(--text-main); margin-bottom: 1rem; font-size: 1.3rem;">Advanced CAI Concepts
+                    </h3>
+                    <ul style="color: var(--text-muted); line-height: 1.8; margin-left: 1.5rem; font-size: 1rem;">
+                        <li><strong style="color: var(--accent);">API Integration:</strong> Write a Python script to
+                            interact with CAI's API, passing a suspicious network log and evaluating the model's anomaly
+                            score.</li>
+                        <li><strong style="color: var(--accent);">Adversarial AI Risk:</strong> Study how hackers are
+                            attempting "Data Poisoning" on defensive CAI architectures to blind them to specific malware
+                            baselines.</li>
+                        <li><strong style="color: var(--accent);">Blue Team Automation:</strong> Connect CAI webhook
+                            alerts to a SOAR (Security Orchestration) platform to automatically revoke user session
+                            tokens upon flag.</li>
+                    </ul>
+                </div>
+            </div>
+        </details>
+
+        <!-- VulneraMCP -->
+        <details class="tool-box animate"
+            style="animation-delay: 0.7s; width: 100%; border: 1px solid var(--border-color); border-radius: 12px; background: rgba(255, 255, 255, 0.02); margin-top: 1.5rem; overflow: hidden; cursor: default;">
+            <summary
+                style="display: flex; justify-content: space-between; align-items: center; padding: 2rem; cursor: pointer; user-select: none;">
+                <h2
+                    style="font-size: 2rem; color: var(--text-main); margin: 0; display: flex; align-items: center; gap: 1rem;">
+                    VulneraMCP
+                    <svg class="dropdown-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        style="transition: transform 0.3s ease; color: var(--text-muted);">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </h2>
+                <span
+                    style="font-size: 0.9rem; color: var(--text-muted); background: rgba(255,255,255,0.05); padding: 0.3rem 0.8rem; border-radius: 20px;">Vulnerability
+                    DB</span>
+            </summary>
+
+            <div style="padding: 0 2rem 2rem 2rem; border-top: 1px solid var(--border-color); margin-top: 0.5rem;">
+                <div style="display: flex; justify-content: flex-end; margin-bottom: 2rem; margin-top: 1.5rem;">
+                    <a href="https://github.com/vineethsai/vulnerable-mcp" target="_blank" rel="noopener noreferrer"
+                        style="padding: 0.5rem 1rem; border: 1px solid var(--accent); color: var(--accent); border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.85rem; transition: all 0.2s ease;">GitHub
+                        Repository ↗</a>
+                </div>
+                <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 2rem; font-size: 1.1rem;">
+                    <strong>VulneraMCP</strong> (The Vulnerable MCP Project) serves as the primary open-source
+                    intelligence database specific to the rapidly expanding realm of the <em>Model Context
+                        Protocol</em>. It catalogues taxonomy, detailed security research, and exact schemas for novel
+                    exploits interacting directly with AI context engines.
+                </p>
+
+                <div
+                    style="background: rgba(178, 195, 167, 0.05); border: 1px solid rgba(178, 195, 167, 0.2); padding: 2rem; border-radius: 12px;">
+                    <h3 style="color: var(--accent); margin-bottom: 1.5rem; font-size: 1.5rem;">Data Implementation
+                        Guide</h3>
+                    <h4 style="color: var(--text-main); margin-bottom: 0.5rem; font-size: 1.1rem;">Phase 1: Knowledge
+                        Ingestion</h4>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem; line-height: 1.6;">Clone the repository
+                        and explore the centralized <code>data/vulnerabilities.json</code> file to grasp the latest
+                        known exploitation frameworks regarding AI integration pipelines and Prompt Injections via MCP.
+                    </p>
+                    <h4 style="color: var(--text-main); margin-bottom: 0.5rem; font-size: 1.1rem;">Phase 2: Environment
+                        Mirroring</h4>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem; line-height: 1.6;">Utilize their
+                        automated GitHub Action deployment scripts featuring pre-built EJS templates to securely stand
+                        up your own internal static mirror of the database for threat-modeling applications within
+                        closed, offline enterprise networks.</p>
+                    <h4 style="color: var(--text-main); margin-bottom: 0.5rem; font-size: 1.1rem;">Phase 3: Actionable
+                        Rulesets</h4>
+                    <p style="color: var(--text-muted); line-height: 1.6;">Leverage the predefined
+                        <code>taxonomy.json</code> categorization maps to architect granular firewall and API gateway
+                        protections explicitly built to strip malicious context payloads bound for your LLM agents.
+                    </p>
+                </div>
+
+                <div
+                    style="margin-top: 2rem; padding: 2rem; border-left: 4px solid var(--accent); background: rgba(255,255,255,0.01); border-radius: 0 12px 12px 0;">
+                    <h3 style="color: var(--text-main); margin-bottom: 1rem; font-size: 1.3rem;">Deep Dive into MCP</h3>
+                    <ul style="color: var(--text-muted); line-height: 1.8; margin-left: 1.5rem; font-size: 1rem;">
+                        <li><strong style="color: var(--accent);">Payload Construction:</strong> Analyze the
+                            <code>vulnerabilities.json</code> to understand how attackers format malicious JSON to
+                            hijack an LLM's Model Context Protocol.</li>
+                        <li><strong style="color: var(--accent);">Local Hosting:</strong> Practice deploying the
+                            VulneraMCP static mirror using Node.js and EJS locally to understand how the project
+                            structures its static threat database.</li>
+                        <li><strong style="color: var(--accent);">Defensive Architecture:</strong> Build a middleware
+                            script in Node or Python that intercepts MCP traffic and checks it against VulneraMCP's
+                            taxonomy before routing it to the LLM.</li>
+                    </ul>
+                </div>
+            </div>
+        </details>
+
+        <!-- HOUND -->
+        <details class="tool-box animate"
+            style="animation-delay: 0.8s; width: 100%; border: 1px solid var(--border-color); border-radius: 12px; background: rgba(255, 255, 255, 0.02); margin-top: 1.5rem; overflow: hidden; cursor: default;">
+            <summary
+                style="display: flex; justify-content: space-between; align-items: center; padding: 2rem; cursor: pointer; user-select: none;">
+                <h2
+                    style="font-size: 2rem; color: var(--text-main); margin: 0; display: flex; align-items: center; gap: 1rem;">
+                    Hound
+                    <svg class="dropdown-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        style="transition: transform 0.3s ease; color: var(--text-muted);">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </h2>
+                <span
+                    style="font-size: 0.9rem; color: var(--text-muted); background: rgba(255,255,255,0.05); padding: 0.3rem 0.8rem; border-radius: 20px;">AI
+                    Code Auditor</span>
+            </summary>
+
+            <div style="padding: 0 2rem 2rem 2rem; border-top: 1px solid var(--border-color); margin-top: 0.5rem;">
+                <p
+                    style="color: var(--text-muted); line-height: 1.8; margin-top: 1.5rem; margin-bottom: 2rem; font-size: 1.1rem;">
+                    <strong>Hound</strong> is an advanced, language-agnostic AI code security auditor that works by
+                    mapping interconnected software relationships into deep knowledge graphs. Instead of static checks,
+                    Hound simulates the cognitive reasoning of expert human code reviewers.
+                </p>
+
+                <div
+                    style="background: rgba(178, 195, 167, 0.05); border: 1px solid rgba(178, 195, 167, 0.2); padding: 2rem; border-radius: 12px;">
+                    <h3 style="color: var(--accent); margin-bottom: 1.5rem; font-size: 1.5rem;">Operation &
+                        Experimentation Guide</h3>
+                    <h4 style="color: var(--text-main); margin-bottom: 0.5rem; font-size: 1.1rem;">Phase 1: Sweep Mode
+                    </h4>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem; line-height: 1.6;">Initialize Hound
+                        against your codebase utilizing "Sweep Mode". This phase builds out the adaptive knowledge
+                        graph, systematically indexing dependencies, logic branches, and components for glaring
+                        top-level security lapses.</p>
+                    <h4 style="color: var(--text-main); margin-bottom: 0.5rem; font-size: 1.1rem;">Phase 2: Intuition
+                        Mode</h4>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem; line-height: 1.6;">Engage "Intuition
+                        Mode" to force Hound into a highly targeted, iterative analysis of the most sensitive functions
+                        identified in Phase 1 (such as Auth tokens and payment parsers), drilling down rapidly through
+                        nested logic to discover zero-day bugs.</p>
+                    <h4 style="color: var(--text-main); margin-bottom: 0.5rem; font-size: 1.1rem;">Phase 3: Refinement
+                    </h4>
+                    <p style="color: var(--text-muted); line-height: 1.6;">Review Hound’s cognitive output flow where it
+                        explains practically exactly *why* it considers a path vulnerable based on its graphs, enabling
+                        you to patch intricate vulnerabilities far beyond the capability of regex-based scanners.</p>
+                </div>
+
+                <div
+                    style="margin-top: 2rem; padding: 2rem; border-left: 4px solid var(--accent); background: rgba(255,255,255,0.01); border-radius: 0 12px 12px 0;">
+                    <h3 style="color: var(--text-main); margin-bottom: 1rem; font-size: 1.3rem;">Expanding Hound Mastery
+                    </h3>
+                    <ul style="color: var(--text-muted); line-height: 1.8; margin-left: 1.5rem; font-size: 1rem;">
+                        <li><strong style="color: var(--accent);">Knowledge Graphs:</strong> Research Code Property
+                            Graphs (CPGs) and how AI models like Hound traverse Abstract Syntax Trees (ASTs) to find
+                            deep logic errors instead of simple syntax errors.</li>
+                        <li><strong style="color: var(--accent);">Targeted Auditing:</strong> Feed Hound a deliberately
+                            vulnerable application (like OWASP Node Goat) in "Intuition Mode" and map out its decision
+                            tree.</li>
+                        <li><strong style="color: var(--accent);">CI/CD Pipelines:</strong> Learn how to block Pull
+                            Requests in GitHub Actions if Hound's confidence score of a newly detected vulnerability
+                            exceeds an 80% confidence threshold.</li>
+                    </ul>
+                </div>
             </div>
         </details>
     </main>
