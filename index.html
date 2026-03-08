@@ -15,6 +15,25 @@
             document.documentElement.setAttribute('data-theme', 'light');
         }
     </script>
+    <style>
+        /* Quick fix for alignment - you can move this to style.css later */
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .logo-img {
+            height: 35px;
+            width: 35px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+        }
+        .logo {
+            line-height: 1;
+            display: inline-block;
+        }
+    </style>
 </head>
 
 <body>
@@ -24,7 +43,7 @@
 
     <nav>
         <div class="logo-container">
-            <img src="image.png" alt="The CyberJai Logo" style="height: 40px; width: 40px; border-radius: 50%; object-fit: cover;">
+            <img src="image.png" alt="The CyberJai Logo" class="logo-img">
             <a href="index.html" class="logo">The CyberJai</a>
         </div>
 
