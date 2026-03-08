@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The CyberJai | Tools</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        if (localStorage.getItem('theme') === 'light') {
+            document.documentElement.setAttribute('data-theme', 'light');
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="grid-bg"></div>
+    <div id="glow"></div>
+
+    <nav>
+        <a href="index.html" class="logo">The CyberJai</a>
+
+        <div class="nav-center">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="tools.html" class="active">Tools</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+
+        <div class="nav-right">
+            <button id="themeToggle" aria-label="Toggle Theme"></button>
+        </div>
+    </nav>
+
+    <main
+        style="align-items: flex-start; text-align: left; max-width: 900px; margin: 0 auto; padding-top: 5rem; padding-bottom: 5rem;">
+        <h1 class="animate" style="animation-delay: 0.1s; font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 1.5rem;">
+            <span class="title-white">Tools Arsenal</span>
+        </h1>
+
+        <p class="subtitle animate"
+            style="animation-delay: 0.2s; max-width: 100%; text-align: left; margin: 0 0 3rem 0;">
+            Explore custom-built utilities designed specifically for bug bounty hunting, scanning, and penetration
+            testing workflows, along with comprehensive guides to the best open-source resources.
+        </p>
+
+        <style>
+            /* Smooth Details Tag Opening */
+            details.tool-box summary {
+                list-style: none;
+                /* Hide default arrow */
+            }
+
+            details.tool-box summary::-webkit-details-marker {
+                display: none;
+            }
+
+            details.tool-box[open] summary svg.dropdown-icon {
+                transform: rotate(180deg);
+                color: var(--accent);
+            }
+
+            details.tool-box {
+                transition: all 0.3s ease;
+            }
+
+            details.tool-box:hover {
+                border-color: rgba(178, 195, 167, 0.4);
+            }
+        </style>
+
+        <details class="tool-box animate"
+            style="animation-delay: 0.3s; width: 100%; border: 1px solid var(--border-color); border-radius: 12px; background: rgba(255, 255, 255, 0.02); margin-top: 3rem; overflow: hidden; cursor: default;">
+
+            <summary
+                style="display: flex; justify-content: space-between; align-items: center; padding: 2rem; cursor: pointer; user-select: none;">
+                <h2
+                    style="font-size: 2rem; color: var(--text-main); margin: 0; display: flex; align-items: center; gap: 1rem;">
+                    OpenHunting.io
+                    <svg class="dropdown-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        style="transition: transform 0.3s ease; color: var(--text-muted);">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </h2>
+                <span
+                    style="font-size: 0.9rem; color: var(--text-muted); background: rgba(255,255,255,0.05); padding: 0.3rem 0.8rem; border-radius: 20px;">Threat
+                    Intelligence</span>
+            </summary>
+
+            <div
+                style="padding: 0 2rem 2rem 2rem; border-top: 1px solid var(--border-color); margin-top: 0.5rem; animation: slideUpFade 0.4s ease forwards;">
+
+                <div style="display: flex; justify-content: flex-end; margin-bottom: 2rem; margin-top: 1.5rem;">
+                    <a href="https://openhunting.io/" target="_blank" rel="noopener noreferrer"
+                        style="padding: 0.5rem 1rem; border: 1px solid var(--accent); color: var(--accent); border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.85rem; transition: all 0.2s ease;">Visit
+                        Platform ↗</a>
+                </div>
+
+                <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 2rem; font-size: 1.1rem;">
+                    <strong>OpenHunting.io</strong> is an open-source initiative dedicated to making threat hunting
+                    intelligence information and tools accessible to everyone in the cybersecurity community. Built
+                    around
+                    the philosophy that <em>"tools are just tools, you are the genius behind them,"</em> it offers a
+                    massive
+                    repository of structured threat intel.
+                </p>
+
+                <div
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 3rem;">
+                    <div
+                        style="background: rgba(255,255,255,0.02); padding: 1.5rem; border: 1px solid var(--border-color); border-radius: 12px; border-top: 3px solid var(--accent);">
+                        <h3
+                            style="color: var(--text-main); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                            </svg>
+                            Threat Library
+                        </h3>
+                        <p style="color: var(--text-muted); line-height: 1.6; font-size: 0.95rem;">A continuously
+                            updated
+                            collection of threat information. The platform automatically aggregates and structures intel
+                            to
+                            give security researchers instant access to widespread IOCs (Indicators of Compromise) and
+                            attack behaviors.</p>
+                    </div>
+
+                    <div
+                        style="background: rgba(255,255,255,0.02); padding: 1.5rem; border: 1px solid var(--border-color); border-radius: 12px; border-top: 3px solid var(--accent);">
+                        <h3
+                            style="color: var(--text-main); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                <polyline points="10 9 9 9 8 9"></polyline>
+                            </svg>
+                            Threat Reports
+                        </h3>
+                        <p style="color: var(--text-muted); line-height: 1.6; font-size: 0.95rem;">Detailed
+                            investigation
+                            write-ups regarding the latest threats. These reports break down attack chains, malware
+                            behavior, and threat actor methodologies, serving as an excellent resource for learning
+                            real-world analysis.</p>
+                    </div>
+
+                    <div
+                        style="background: rgba(255,255,255,0.02); padding: 1.5rem; border: 1px solid var(--border-color); border-radius: 12px; border-top: 3px solid var(--accent);">
+                        <h3
+                            style="color: var(--text-main); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
+                                </path>
+                            </svg>
+                            Hunting Tools
+                        </h3>
+                        <p style="color: var(--text-muted); line-height: 1.6; font-size: 0.95rem;">A suite of
+                            specialized
+                            utilities designed to aid the threat hunting process. This includes tools for footprinting,
+                            WHOIS enumeration, and proactive scanning against newly discovered vulnerabilities.</p>
+                    </div>
+                </div>
+
+                <div
+                    style="background: rgba(178, 195, 167, 0.05); border: 1px solid rgba(178, 195, 167, 0.2); padding: 2rem; border-radius: 12px;">
+                    <h3 style="color: var(--accent); margin-bottom: 1.5rem; font-size: 1.5rem;">Learning &
+                        Experimentation
+                        Guide</h3>
+
+                    <h4 style="color: var(--text-main); margin-bottom: 0.5rem; font-size: 1.1rem;">Phase 1: Information
+                        Gathering</h4>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem; line-height: 1.6;">
+                        Start your workflow by checking the <strong>Threat Report</strong> section. Identify a recently
+                        reported vulnerability (e.g., a new CVE). Read the report to understand the "how" and "why" of
+                        the
+                        exploit. Then, head to the <strong>Threat Library</strong> to find associated IP addresses,
+                        domains,
+                        and hashes linked to the threat actors actively exploiting it.
+                    </p>
+
+                    <h4 style="color: var(--text-main); margin-bottom: 0.5rem; font-size: 1.1rem;">Phase 2: Utilizing
+                        the
+                        Tools</h4>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem; line-height: 1.6;">
+                        Leverage the <strong>Threat Hunting Tools</strong> and <strong>Whois</strong> modules provided
+                        on
+                        the platform. Plug in the malicious infrastructure assets you found in Phase 1. Practice
+                        enumerating
+                        and mapping out the attacker's network footprint. Cross-reference the data within your own
+                        terminal
+                        environments or SOC tools.
+                    </p>
+
+                    <h4 style="color: var(--text-main); margin-bottom: 0.5rem; font-size: 1.1rem;">Phase 3: Defensive
+                        Engineering</h4>
+                    <p style="color: var(--text-muted); line-height: 1.6;">
+                        The ultimate goal of OpenHunting is turning intelligence into defense. Take the IOCs and TTPs
+                        (Tactics, Techniques, and Procedures) you discovered and write Sigma rules, YARA rules, or Snort
+                        signatures to detect these threats in a lab environment. Try executing safe simulations of the
+                        attack to verify if your rules work.
+                    </p>
+                </div>
+            </div>
+        </details>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The CyberJai | Contact Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        if (localStorage.getItem('theme') === 'light') {
+            document.documentElement.setAttribute('data-theme', 'light');
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="grid-bg"></div>
+    <div id="glow"></div>
+
+    <nav>
+        <a href="index.html" class="logo">The CyberJai</a>
+
+        <div class="nav-center">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="tools.html">Tools</a>
+            <a href="contact.html" class="active">Contact Us</a>
+        </div>
+
+        <div class="nav-right">
+            <button id="themeToggle" aria-label="Toggle Theme"></button>
+        </div>
+    </nav>
+
+    <main
+        style="align-items: center; text-align: center; max-width: 800px; margin: 0 auto; padding-top: 5rem; padding-bottom: 5rem;">
+        <h1 class="animate" style="animation-delay: 0.1s; font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 1.5rem;">
+            <span class="title-white">Contact</span>
+        </h1>
+
+        <p class="subtitle animate"
+            style="animation-delay: 0.2s; color: var(--text-muted); line-height: 1.8; font-size: 1.15rem; margin-bottom: 3rem;">
+            Want to collaborate, build something powerful, or talk about cybersecurity?
+        </p>
+
+        <div class="animate"
+            style="animation-delay: 0.3s; display: flex; flex-direction: column; gap: 1.5rem; width: 100%; max-width: 400px; margin: 0 auto;">
+            <a href="mailto:info.secureworldz@gmail.com"
+                style="display: flex; align-items: center; justify-content: center; gap: 1rem; padding: 1rem; background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-color); border-radius: 12px; text-decoration: none; color: var(--text-main); font-size: 1.1rem; transition: all 0.3s ease;">
+                <svg viewBox="0 0 24 24"
+                    style="width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                info.secureworldz@gmail.com
+            </a>
+
+            <a href="https://github.com/thecyberjai" target="_blank" rel="noopener noreferrer"
+                style="display: flex; align-items: center; justify-content: center; gap: 1rem; padding: 1rem; background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-color); border-radius: 12px; text-decoration: none; color: var(--text-main); font-size: 1.1rem; transition: all 0.3s ease;">
+                <svg viewBox="0 0 24 24" style="width: 24px; height: 24px; fill: currentColor;">
+                    <path
+                        d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.379.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
+                </svg>
+                github.com/thecyberjai
+            </a>
+
+            <a href="https://instagram.com/thecyberjai" target="_blank" rel="noopener noreferrer"
+                style="display: flex; align-items: center; justify-content: center; gap: 1rem; padding: 1rem; background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-color); border-radius: 12px; text-decoration: none; color: var(--text-main); font-size: 1.1rem; transition: all 0.3s ease;">
+                <svg viewBox="0 0 24 24"
+                    style="width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+                @thecyberjai
+            </a>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

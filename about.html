@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The CyberJai | About Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        if (localStorage.getItem('theme') === 'light') {
+            document.documentElement.setAttribute('data-theme', 'light');
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="grid-bg"></div>
+    <div id="glow"></div>
+
+    <nav>
+        <a href="index.html" class="logo">The CyberJai</a>
+
+        <div class="nav-center">
+            <a href="index.html">Home</a>
+            <a href="about.html" class="active">About Us</a>
+            <a href="tools.html">Tools</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+
+        <div class="nav-right">
+            <button id="themeToggle" aria-label="Toggle Theme"></button>
+        </div>
+    </nav>
+
+    <main
+        style="align-items: flex-start; text-align: left; max-width: 900px; margin: 0 auto; padding-top: 5rem; padding-bottom: 5rem;">
+
+        <h1 class="animate" style="animation-delay: 0.1s; font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 1.5rem;">
+            <span class="title-white">About Me</span>
+        </h1>
+
+        <div class="animate" style="animation-delay: 0.2s; margin-bottom: 4rem;">
+            <p style="color: var(--text-muted); line-height: 1.8; font-size: 1.1rem; margin-bottom: 1.5rem;">
+                Hi, I'm Jaiganesh, also known as TheCyberJai.
+            </p>
+            <p style="color: var(--text-muted); line-height: 1.8; font-size: 1.1rem; margin-bottom: 1.5rem;">
+                I'm a cybersecurity enthusiast, developer, and the founder of Secure Worldz. My focus is on building
+                innovative platforms that help developers, hackers, and tech enthusiasts learn, build, and grow in the
+                cybersecurity ecosystem.
+            </p>
+            <p style="color: var(--text-muted); line-height: 1.8; font-size: 1.1rem;">
+                I enjoy working on security tools, developer platforms, and experimental tech projects that push
+                boundaries. My mission is to create systems that make technology more secure, accessible, and powerful
+                for the community.
+            </p>
+        </div>
+
+        <h2 class="animate" style="animation-delay: 0.3s; font-size: 2rem; margin-bottom: 2rem; color: var(--accent);">
+            What I Do
+        </h2>
+
+        <div class="animate"
+            style="animation-delay: 0.4s; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-bottom: 5rem; width: 100%;">
+            <div
+                style="background: rgba(255, 255, 255, 0.02); padding: 1.5rem; border: 1px solid var(--border-color); border-radius: 12px;">
+                <h3 style="color: var(--text-main); margin-bottom: 0.5rem; font-size: 1.2rem;">Cybersecurity Research
+                </h3>
+                <p style="color: var(--text-muted); line-height: 1.6; font-size: 0.95rem;">Exploring vulnerabilities,
+                    security practices, and ethical hacking techniques.</p>
+            </div>
+            <div
+                style="background: rgba(255, 255, 255, 0.02); padding: 1.5rem; border: 1px solid var(--border-color); border-radius: 12px;">
+                <h3 style="color: var(--text-main); margin-bottom: 0.5rem; font-size: 1.2rem;">Tool Development</h3>
+                <p style="color: var(--text-muted); line-height: 1.6; font-size: 0.95rem;">Building developer and
+                    cybersecurity tools that solve real-world problems.</p>
+            </div>
+            <div
+                style="background: rgba(255, 255, 255, 0.02); padding: 1.5rem; border: 1px solid var(--border-color); border-radius: 12px;">
+                <h3 style="color: var(--text-main); margin-bottom: 0.5rem; font-size: 1.2rem;">Startup Building</h3>
+                <p style="color: var(--text-muted); line-height: 1.6; font-size: 0.95rem;">Founder of Secure Worldz,
+                    focused on building next-gen tech platforms.</p>
+            </div>
+            <div
+                style="background: rgba(255, 255, 255, 0.02); padding: 1.5rem; border: 1px solid var(--border-color); border-radius: 12px;">
+                <h3 style="color: var(--text-main); margin-bottom: 0.5rem; font-size: 1.2rem;">Community & Learning</h3>
+                <p style="color: var(--text-muted); line-height: 1.6; font-size: 0.95rem;">Sharing knowledge through
+                    workshops, projects, and technical content.</p>
+            </div>
+        </div>
+
+        <h2 class="animate" style="animation-delay: 0.5s; font-size: 2rem; margin-bottom: 2rem; color: var(--accent);">
+            Projects
+        </h2>
+
+        <div class="animate"
+            style="animation-delay: 0.6s; display: flex; flex-direction: column; gap: 2rem; width: 100%;">
+            <div style="border-left: 3px solid var(--text-main); padding-left: 1.5rem;">
+                <h3 style="color: var(--text-main); margin-bottom: 0.5rem; font-size: 1.3rem;">Secure Worldz</h3>
+                <p style="color: var(--text-muted); line-height: 1.6;">A cybersecurity-focused ecosystem built to
+                    empower developers and ethical hackers.</p>
+            </div>
+            <div style="border-left: 3px solid var(--text-main); padding-left: 1.5rem;">
+                <h3 style="color: var(--text-main); margin-bottom: 0.5rem; font-size: 1.3rem;">DragoTool</h3>
+                <p style="color: var(--text-muted); line-height: 1.6;">A secure developer platform designed to manage
+                    and deploy powerful technical tools.</p>
+            </div>
+            <div style="border-left: 3px solid var(--text-main); padding-left: 1.5rem;">
+                <h3 style="color: var(--text-main); margin-bottom: 0.5rem; font-size: 1.3rem;">Developer Experiments
+                </h3>
+                <p style="color: var(--text-muted); line-height: 1.6;">Multiple experimental projects exploring AI,
+                    security, and web technologies.</p>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

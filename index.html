@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The CyberJai | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // Prevent FOUC on page load
+        if (localStorage.getItem('theme') === 'light') {
+            document.documentElement.setAttribute('data-theme', 'light');
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="grid-bg"></div>
+    <div id="glow"></div>
+
+    <nav>
+        <a href="index.html" class="logo">The CyberJai</a>
+
+        <div class="nav-center">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="tools.html">Tools</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+
+        <div class="nav-right">
+            <button id="themeToggle" aria-label="Toggle Theme"></button>
+        </div>
+    </nav>
+
+    <main>
+        <div class="badge animate" style="animation-delay: 0.1s;">
+            THECYBERJAI
+        </div>
+
+        <h1 class="animate" style="animation-delay: 0.2s;">
+            <span class="title-gray"><b>TECH RESEARCHER</b></span>
+            <span class="title-white">Founder of Secure Worldz</span>
+        </h1>
+
+        <p class="subtitle animate" style="animation-delay: 0.3s;">
+            Founder & CEO of @secureworldz_official | Busy Building dragotool.shop | Cybersecurity Educator | Security
+            Strategist
+        </p>
+
+        
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
