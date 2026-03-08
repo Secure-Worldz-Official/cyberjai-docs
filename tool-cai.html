@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The CyberJai | Cybersecurity AI (CAI)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        if (localStorage.getItem('theme') === 'light') {
+            document.documentElement.setAttribute('data-theme', 'light');
+        }
+    </script>
+</head>
+<body>
+    <div class="grid-bg"></div>
+    <div id="glow"></div>
+    <nav>
+        <a href="index.html" class="logo">The CyberJai</a>
+        <div class="nav-center">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="tools.html" class="active">Tools</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="nav-right">
+            <button id="themeToggle" aria-label="Toggle Theme"></button>
+        </div>
+    </nav>
+    <main style="align-items: flex-start; text-align: left; max-width: 900px; margin: 0 auto; padding-top: 5rem; padding-bottom: 5rem;">
+        <a href="tools.html" style="color: var(--accent); text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; margin-bottom: 2rem; font-weight: 600; transition: all 0.2s ease;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            Back to Tools
+        </a>
+        
+        <div class="animate" style="animation-delay: 0.1s; display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; margin-bottom: 2.5rem;">
+            <h1 style="font-size: clamp(2.5rem, 5vw, 4rem); margin: 0;">
+                <span class="title-white">Cybersecurity AI (CAI)</span>
+            </h1>
+            <span
+                    style="font-size: 0.9rem; color: var(--text-muted); background: rgba(255,255,255,0.05); padding: 0.3rem 0.8rem; border-radius: 20px;">AI
+                    Cyber Framework</span>
+        </div>
+        
+        <div class="animate" style="animation-delay: 0.2s;" id="doc-content">
+            <div style="padding: 0 2rem 2rem 2rem; border-top: 1px solid var(--border-color); margin-top: 0.5rem;">
+                <div style="display: flex; justify-content: flex-end; margin-bottom: 2rem; margin-top: 1.5rem;">
+                    <a href="#" target="_blank" rel="noopener noreferrer"
+                        style="padding: 0.5rem 1rem; border: 1px solid var(--accent); color: var(--accent); border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.85rem; transition: all 0.2s ease;">GitHub
+                        Repository ↗</a>
+                </div>
+                <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 2rem; font-size: 1.1rem;">
+                    <strong>Cybersecurity AI (CAI)</strong> represents both a broad discipline and a specific
+                    open-source automation framework granting ethical hackers API access to over 300 different
+                    security-oriented AI models. It democratizes machine learning so defensive teams can detect
+                    anomalies in logs at speeds incomprehensible to manual human parsing.
+                </p>
+
+                <div
+                    style="background: rgba(178, 195, 167, 0.05); border: 1px solid rgba(178, 195, 167, 0.2); padding: 2rem; border-radius: 12px;">
+                    <h3 style="color: var(--accent); margin-bottom: 1.5rem; font-size: 1.5rem;">Installation & Usage
+                        Guide</h3>
+                    <h4 style="color: var(--text-main); margin-bottom: 0.5rem; font-size: 1.1rem;">Phase 1: Log
+                        Funneling</h4>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem; line-height: 1.6;">Ingest massive
+                        quantities of network traffic, firewall alerts, and endpoint telemetry into the CAI
+                        architecture. The algorithms will automatically establish a "baseline of normalcy".</p>
+                    <h4 style="color: var(--text-main); margin-bottom: 0.5rem; font-size: 1.1rem;">Phase 2: Pattern
+                        Recognition</h4>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem; line-height: 1.6;">Using high-speed
+                        correlation, the framework spots obfuscated behavioral traits common to polymorphic malware or
+                        stealthy phishing spear-campaigns that evade traditional static signatures.</p>
+                    <h4 style="color: var(--text-main); margin-bottom: 0.5rem; font-size: 1.1rem;">Phase 3: Automated
+                        Incident Response (IR)</h4>
+                    <p style="color: var(--text-muted); line-height: 1.6;">Once a critical threat is verified, the AI
+                        agent dynamically spins up firewall isolation protocols and zeroes out affected endpoints before
+                        human analysts even wake up to triage the damage.</p>
+                </div>
+
+                <div
+                    style="margin-top: 2rem; padding: 2rem; border-left: 4px solid var(--accent); background: rgba(255,255,255,0.01); border-radius: 0 12px 12px 0;">
+                    <h3 style="color: var(--text-main); margin-bottom: 1rem; font-size: 1.3rem;">Advanced CAI Concepts
+                    </h3>
+                    <ul style="color: var(--text-muted); line-height: 1.8; margin-left: 1.5rem; font-size: 1rem;">
+                        <li><strong style="color: var(--accent);">API Integration:</strong> Write a Python script to
+                            interact with CAI's API, passing a suspicious network log and evaluating the model's anomaly
+                            score.</li>
+                        <li><strong style="color: var(--accent);">Adversarial AI Risk:</strong> Study how hackers are
+                            attempting "Data Poisoning" on defensive CAI architectures to blind them to specific malware
+                            baselines.</li>
+                        <li><strong style="color: var(--accent);">Blue Team Automation:</strong> Connect CAI webhook
+                            alerts to a SOAR (Security Orchestration) platform to automatically revoke user session
+                            tokens upon flag.</li>
+                    </ul>
+                </div>
+            </div>
+        
+        </div>
+    </main>
+    <style>
+        #doc-content > div {
+            animation: none !important;
+            margin-top: 0 !important;
+            border-top: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The CyberJai | Penligent AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        if (localStorage.getItem('theme') === 'light') {
+            document.documentElement.setAttribute('data-theme', 'light');
+        }
+    </script>
+</head>
+<body>
+    <div class="grid-bg"></div>
+    <div id="glow"></div>
+    <nav>
+        <a href="index.html" class="logo">The CyberJai</a>
+        <div class="nav-center">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="tools.html" class="active">Tools</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="nav-right">
+            <button id="themeToggle" aria-label="Toggle Theme"></button>
+        </div>
+    </nav>
+    <main style="align-items: flex-start; text-align: left; max-width: 900px; margin: 0 auto; padding-top: 5rem; padding-bottom: 5rem;">
+        <a href="tools.html" style="color: var(--accent); text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; margin-bottom: 2rem; font-weight: 600; transition: all 0.2s ease;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            Back to Tools
+        </a>
+        
+        <div class="animate" style="animation-delay: 0.1s; display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; margin-bottom: 2.5rem;">
+            <h1 style="font-size: clamp(2.5rem, 5vw, 4rem); margin: 0;">
+                <span class="title-white">Penligent AI</span>
+            </h1>
+            <span
+                    style="font-size: 0.9rem; color: var(--text-muted); background: rgba(255,255,255,0.05); padding: 0.3rem 0.8rem; border-radius: 20px;">Agentic
+                    Pentesting</span>
+        </div>
+        
+        <div class="animate" style="animation-delay: 0.2s;" id="doc-content">
+            <div style="padding: 0 2rem 2rem 2rem; border-top: 1px solid var(--border-color); margin-top: 0.5rem;">
+                <div style="display: flex; justify-content: flex-end; margin-bottom: 2rem; margin-top: 1.5rem;">
+                    <a href="https://penligent.ai/" target="_blank" rel="noopener noreferrer"
+                        style="padding: 0.5rem 1rem; border: 1px solid var(--accent); color: var(--accent); border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.85rem; transition: all 0.2s ease;">Visit
+                        Platform ↗</a>
+                </div>
+                <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 2rem; font-size: 1.1rem;">
+                    <strong>Penligent AI</strong> acts as an advanced "agentic AI hacker" that performs end-to-end
+                    autonomous penetration testing. It seamlessly integrates over 200 standard tools (like Nmap,
+                    Metasploit, and Burp Suite) into unified workflows to orchestrate, execute, and document heavy
+                    attack chains automatically.
+                </p>
+
+                <div
+                    style="background: rgba(178, 195, 167, 0.05); border: 1px solid rgba(178, 195, 167, 0.2); padding: 2rem; border-radius: 12px;">
+                    <h3 style="color: var(--accent); margin-bottom: 1.5rem; font-size: 1.5rem;">Installation & Usage
+                        Guide</h3>
+                    <h4 style="color: var(--text-main); margin-bottom: 0.5rem; font-size: 1.1rem;">Phase 1: Asset
+                        Enumeration</h4>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem; line-height: 1.6;">The AI connects to the
+                        target infrastructure and independently queries Nmap and specialized scanners to map the attack
+                        surface and surface misconfigurations.</p>
+                    <h4 style="color: var(--text-main); margin-bottom: 0.5rem; font-size: 1.1rem;">Phase 2: Exploit
+                        Splicing</h4>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem; line-height: 1.6;">Once an exposed CVE or
+                        web vulnerability is detected, Penligent formulates an attack path, testing variations of SQLi,
+                        SSRF, or RCE configurations iteratively via integrated frameworks until successful execution.
+                    </p>
+                    <h4 style="color: var(--text-main); margin-bottom: 0.5rem; font-size: 1.1rem;">Phase 3: Cyber Range
+                        & Compliance</h4>
+                    <p style="color: var(--text-muted); line-height: 1.6;">The platform auto-compiles the entire action
+                        history into pristine ISO 27001 / PCI-DSS compliance reports, while allowing junior testers to
+                        practice replicating the AI's success manually in their built-in Cyber Range sandbox.</p>
+                </div>
+
+                <div
+                    style="margin-top: 2rem; padding: 2rem; border-left: 4px solid var(--accent); background: rgba(255,255,255,0.01); border-radius: 0 12px 12px 0;">
+                    <h3 style="color: var(--text-main); margin-bottom: 1rem; font-size: 1.3rem;">Mastering Agentic
+                        Workflows</h3>
+                    <ul style="color: var(--text-muted); line-height: 1.8; margin-left: 1.5rem; font-size: 1rem;">
+                        <li><strong style="color: var(--accent);">Hands-on Lab:</strong> Use Penligent's Cyber Range to
+                            observe the AI exploiting an outdated WordPress plugin, then repeat the exact attack chain
+                            manually using WPScan.</li>
+                        <li><strong style="color: var(--accent);">Tool Chaining Logic:</strong> Study how Penligent
+                            parses Nmap XML outputs and automatically feeds them into Metasploit modules without human
+                            intervention.</li>
+                        <li><strong style="color: var(--accent);">Compliance Mapping:</strong> Learn the difference
+                            between raw vulnerability data and executive PCI-DSS reports. Observe how the AI summarizes
+                            technical risk.</li>
+                    </ul>
+                </div>
+            </div>
+        
+        </div>
+    </main>
+    <style>
+        #doc-content > div {
+            animation: none !important;
+            margin-top: 0 !important;
+            border-top: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <script src="script.js"></script>
+</body>
+</html>

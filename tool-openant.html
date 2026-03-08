@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The CyberJai | OpenAnt</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        if (localStorage.getItem('theme') === 'light') {
+            document.documentElement.setAttribute('data-theme', 'light');
+        }
+    </script>
+</head>
+<body>
+    <div class="grid-bg"></div>
+    <div id="glow"></div>
+    <nav>
+        <a href="index.html" class="logo">The CyberJai</a>
+        <div class="nav-center">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="tools.html" class="active">Tools</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="nav-right">
+            <button id="themeToggle" aria-label="Toggle Theme"></button>
+        </div>
+    </nav>
+    <main style="align-items: flex-start; text-align: left; max-width: 900px; margin: 0 auto; padding-top: 5rem; padding-bottom: 5rem;">
+        <a href="tools.html" style="color: var(--accent); text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; margin-bottom: 2rem; font-weight: 600; transition: all 0.2s ease;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            Back to Tools
+        </a>
+        
+        <div class="animate" style="animation-delay: 0.1s; display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; margin-bottom: 2.5rem;">
+            <h1 style="font-size: clamp(2.5rem, 5vw, 4rem); margin: 0;">
+                <span class="title-white">OpenAnt</span>
+            </h1>
+            <span
+                    style="font-size: 0.9rem; color: var(--text-muted); background: rgba(255,255,255,0.05); padding: 0.3rem 0.8rem; border-radius: 20px;">Vulnerability
+                    Discovery</span>
+        </div>
+        
+        <div class="animate" style="animation-delay: 0.2s;" id="doc-content">
+            <div
+                style="padding: 0 2rem 2rem 2rem; border-top: 1px solid var(--border-color); margin-top: 0.5rem; animation: slideUpFade 0.4s ease forwards;">
+
+                <div
+                    style="display: flex; justify-content: flex-end; gap: 1rem; margin-bottom: 2rem; margin-top: 1.5rem;">
+                    <a href="https://github.com/knostic/OpenAnt" target="_blank" rel="noopener noreferrer"
+                        style="padding: 0.5rem 1rem; border: 1px solid var(--accent); color: var(--accent); border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.85rem; transition: all 0.2s ease;">GitHub
+                        Repository ↗</a>
+                    <a href="https://www.knostic.ai/openant" target="_blank" rel="noopener noreferrer"
+                        style="padding: 0.5rem 1rem; background: rgba(178, 195, 167, 0.1); border: 1px solid var(--accent); color: var(--accent); border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.85rem; transition: all 0.2s ease;">Visit
+                        Platform ↗</a>
+                </div>
+
+                <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 2rem; font-size: 1.1rem;">
+                    <strong>OpenAnt</strong> from Knostic is an open-source LLM-based vulnerability discovery product
+                    that helps defenders proactively find verified security flaws while minimizing both false positives
+                    and false negatives. <em>Stage 1 detects. Stage 2 attacks. What survives is real.</em>
+                </p>
+
+                <div
+                    style="background: rgba(178, 195, 167, 0.05); border: 1px solid rgba(178, 195, 167, 0.2); padding: 2rem; border-radius: 12px;">
+                    <h3 style="color: var(--accent); margin-bottom: 1.5rem; font-size: 1.5rem;">Installation & Usage
+                        Guide</h3>
+
+                    <h4 style="color: var(--text-main); margin-bottom: 0.5rem; font-size: 1.1rem;">Local Setup</h4>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem; line-height: 1.6;">
+                        Build the CLI binary (requires Go 1.25+):<br>
+                        <code
+                            style="background: rgba(0,0,0,0.2); padding: 0.2rem 0.5rem; border-radius: 4px; display: inline-block; margin-top: 0.3rem;">cd apps/openant-cli && make build</code><br><br>
+                        Symlink it onto your PATH:<br>
+                        <code
+                            style="background: rgba(0,0,0,0.2); padding: 0.2rem 0.5rem; border-radius: 4px; display: inline-block; margin-top: 0.3rem;">ln -sf "$(pwd)/apps/openant-cli/bin/openant" /usr/local/bin/openant</code>
+                    </p>
+
+                    <h4 style="color: var(--text-main); margin-bottom: 0.5rem; font-size: 1.1rem;">Configuration</h4>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem; line-height: 1.6;">
+                        Set your Anthropic API key (requires Claude Opus 4.6 model):<br>
+                        <code
+                            style="background: rgba(0,0,0,0.2); padding: 0.2rem 0.5rem; border-radius: 4px; display: inline-block; margin-top: 0.3rem;">openant set-api-key &lt;your-key&gt;</code>
+                    </p>
+
+                    <h4 style="color: var(--text-main); margin-bottom: 0.5rem; font-size: 1.1rem;">Analyzing a Project
+                    </h4>
+                    <p style="color: var(--text-muted); line-height: 1.6;">
+                        Initialize your project (e.g., Python or Go repo):<br>
+                        <code
+                            style="background: rgba(0,0,0,0.2); padding: 0.2rem 0.5rem; border-radius: 4px; display: inline-block; margin: 0.3rem 0;">openant init &lt;repo-url&gt; -l go</code><br>
+                        Run the full automated vulnerability discovery pipeline:<br>
+                        <code
+                            style="background: rgba(0,0,0,0.2); padding: 0.2rem 0.5rem; border-radius: 4px; display: inline-block; margin-top: 0.3rem;">openant scan --verify</code><br>
+                        Or run manually: <code>openant parse</code> -> <code>enhance</code> -> <code>analyze</code> ->
+                        <code>verify</code> -> <code>build-output</code> -> <code>report</code>
+                    </p>
+                </div>
+
+                <div
+                    style="margin-top: 2rem; padding: 2rem; border-left: 4px solid var(--accent); background: rgba(255,255,255,0.01); border-radius: 0 12px 12px 0;">
+                    <h3 style="color: var(--text-main); margin-bottom: 1rem; font-size: 1.3rem;">Extra Info & Disclaimer
+                    </h3>
+                    <ul style="color: var(--text-muted); line-height: 1.8; margin-left: 1.5rem; font-size: 1rem;">
+                        <li><strong style="color: var(--accent);">Supported Languages:</strong> Go, Python,
+                            JavaScript/TypeScript (beta), C/C++ (beta), PHP (beta), Ruby (beta).</li>
+                        <li><strong style="color: var(--accent);">Purpose:</strong> OpenAnt is intended for defensive
+                            and research purposes only. Scan code you own or have permission to test!</li>
+                        <li><strong style="color: var(--accent);">License:</strong> Released under Apache 2 license to
+                            help open source maintainers stay ahead of attackers.</li>
+                    </ul>
+                </div>
+            </div>
+        
+        </div>
+    </main>
+    <style>
+        #doc-content > div {
+            animation: none !important;
+            margin-top: 0 !important;
+            border-top: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <script src="script.js"></script>
+</body>
+</html>
