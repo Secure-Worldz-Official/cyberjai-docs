@@ -36,7 +36,8 @@
         </div>
     </nav>
 
-    <main style="align-items: flex-start; text-align: left; max-width: 1200px; margin: 0 auto; padding-top: 5rem; padding-bottom: 5rem;">
+    <main
+        style="align-items: flex-start; text-align: left; max-width: 1200px; margin: 0 auto; padding-top: 5rem; padding-bottom: 5rem;">
         <h1 class="animate" style="animation-delay: 0.1s; font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 1.5rem;">
             <span class="title-white">Tools Arsenal</span>
         </h1>
@@ -137,7 +138,7 @@
             details.tool-box:not([open]) h2 {
                 flex-direction: column;
             }
-            
+
             details.tool-box[open] h2 {
                 display: flex;
                 align-items: center;
@@ -147,22 +148,22 @@
             details.tool-box span.badge-tag {
                 font-size: 0.9rem;
                 color: var(--text-muted);
-                background: rgba(255,255,255,0.05);
+                background: rgba(255, 255, 255, 0.05);
                 padding: 0.3rem 0.8rem;
                 border-radius: 20px;
                 display: inline-block;
             }
-            
+
             /* Hide the dropdown icon in square mode */
             details.tool-box:not([open]) svg.dropdown-icon {
                 display: none;
             }
-        
+
             .tools-grid a.tool-box:hover {
                 border-color: rgba(178, 195, 167, 0.4);
                 transform: translateY(-5px);
             }
-</style>
+        </style>
 
         <div class="tools-grid">
 
@@ -206,7 +207,15 @@
                     style="font-size: 0.9rem; color: var(--text-muted); background: rgba(255,255,255,0.05); padding: 0.3rem 0.8rem; border-radius: 20px;">Vulnerability
                     DB</span>
             </a>
-</div>
+
+            <a href="tool-bug-bounty.html" class="tool-box animate"
+                style="text-decoration: none; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; gap: 1.5rem; padding: 2rem; aspect-ratio: 1/1; background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-color); border-radius: 12px; transition: all 0.3s ease;">
+                <h2 style="font-size: 1.8rem; color: var(--text-main); margin: 0;">Top Bug bounty sites</h2>
+                <span
+                    style="font-size: 0.9rem; color: var(--text-muted); background: rgba(255,255,255,0.05); padding: 0.3rem 0.8rem; border-radius: 20px;">Top
+                    bug bounty sites</span>
+            </a>
+        </div>
     </main>
 
     <script src="script.js"></script>
