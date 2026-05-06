@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The CyberJai | AI in Cybersecurity</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        if (localStorage.getItem('theme') === 'light') {
+            document.documentElement.setAttribute('data-theme', 'light');
+        }
+    </script>
+    <style>
+        .mega-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .content-section {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 4rem;
+            margin-bottom: 6rem;
+            backdrop-filter: blur(15px);
+            transition: all 0.4s ease;
+        }
+
+        .content-section:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.04);
+            border-color: var(--accent);
+        }
+
+        .section-header {
+            margin-bottom: 3rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .section-header h2 {
+            font-size: clamp(2rem, 4vw, 2.8rem);
+            margin: 0;
+            color: var(--accent);
+            font-weight: 800;
+        }
+
+        .section-header .step-num {
+            background: var(--accent);
+            color: #000;
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            font-size: 1.8rem;
+            flex-shrink: 0;
+        }
+
+        .main-text {
+            font-size: 1.25rem;
+            line-height: 2;
+            color: var(--text-muted);
+            margin-bottom: 3rem;
+        }
+
+        .usage-box {
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid var(--border-color);
+            padding: 2.5rem;
+            border-radius: 16px;
+            margin: 3rem 0;
+        }
+
+        .usage-box h4 {
+            color: var(--accent);
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .interfaces-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2.5rem;
+            margin: 3rem 0;
+        }
+
+        .interface-card {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+        }
+
+        .code-snippet {
+            background: #020617;
+            padding: 2rem;
+            border-radius: 12px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1rem;
+            color: #94a3b8;
+            margin-top: 1.5rem;
+            border: 1px solid #1e293b;
+        }
+
+        .pro-tip {
+            background: linear-gradient(90deg, rgba(178, 195, 167, 0.1), transparent);
+            border-left: 4px solid var(--accent);
+            padding: 2rem;
+            margin: 3rem 0;
+            border-radius: 0 12px 12px 0;
+        }
+
+        .tool-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .tool-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--border-color);
+            padding: 2.5rem;
+            border-radius: 16px;
+            text-align: left;
+        }
+
+        .tool-card h3 {
+            color: var(--accent);
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+
+        @media (max-width: 850px) {
+            .interfaces-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .content-section {
+                padding: 2.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-bg"></div>
+    <div id="glow"></div>
+    <nav>
+        <a href="index.html" class="logo">The CyberJai</a>
+        <div class="nav-center">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="tools.html" class="active">Tools</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="nav-right">
+            <button id="themeToggle" aria-label="Toggle Theme"></button>
+        </div>
+    </nav>
+
+    <main class="mega-container" style="padding-top: 8rem; padding-bottom: 10rem;">
+        <a href="tools.html"
+            style="color: var(--accent); text-decoration: none; display: inline-flex; align-items: center; gap: 0.8rem; margin-bottom: 4rem; font-weight: 700; transition: all 0.2s ease; font-size: 1.1rem;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 12H5M12 19l-7-7 7-7" />
+            </svg>
+            BACK TO TOOLS
+        </a>
+
+        <div class="animate" style="animation-delay: 0.1s; margin-bottom: 8rem;">
+            <h1 style="font-size: clamp(3.5rem, 8vw, 5.5rem); margin: 0; line-height: 1; letter-spacing: -0.04em;">
+                <span class="title-white">The Expanded Guide to</span><br>
+                <span class="title-white" style="opacity: 0.8;">AI in Cybersecurity</span>
+            </h1>
+            <p
+                style="max-width: 800px; margin-top: 2.5rem; font-size: 1.5rem; line-height: 1.6; color: var(--text-muted);">
+                Welcome to the complete masterclass on Artificial Intelligence for security. This guide elaborates on
+                how modern machine learning models are deployed to defend systems, automate attacks, and predict
+                vulnerabilities before they exist.
+            </p>
+        </div>
+
+        <!-- 0. Theory -->
+        <div class="content-section animate" style="animation-delay: 0.15s;">
+            <div class="section-header">
+                <h2>The Foundation: CLI & UI Interfaces</h2>
+            </div>
+            <p class="main-text">
+                Before diving into the tools, you must understand the two primary ways security professionals interact
+                with AI. While the logic behind the scenes remains the same, the interface changes based on the user's
+                role and the complexity of the task at hand.
+            </p>
+
+            <div class="interfaces-grid">
+                <div class="interface-card">
+                    <h4 style="color: var(--accent); margin-top:0;">Command Line (CLI)</h4>
+                    <p style="color: var(--text-muted); line-height: 1.6;">The CLI is the playground of the developer
+                        and the penetration tester. It allows for lightning-fast automation and the ability to pipe AI
+                        outputs directly into other hacking tools like Nmap, Metasploit, or custom Python scripts.</p>
+                </div>
+                <div class="interface-card">
+                    <h4 style="color: var(--accent); margin-top:0;">User Interface (UI)</h4>
+                    <p style="color: var(--text-muted); line-height: 1.6;">The UI is where the Analyst lives. It
+                        provides a cockpit view of the entire network. AI uses visual models to create heatmaps,
+                        link-analysis nodes, and high-level probability scores that humans can digest at a glance.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 1. Detection -->
+        <div class="content-section animate" style="animation-delay: 0.2s;">
+            <div class="section-header">
+                <h2>Advanced Threat Detection</h2>
+            </div>
+            <p class="main-text">
+                Traditional security is like a librarian looking for a specific book by its title (a virus signature).
+                If the title changes slightly, the librarian fails. AI-driven detection is different; it knows the
+                "genre" and "writing style" of a virus. It monitors behavior—such as a user accessing 500 files in 2
+                seconds—and recognizes it as Ransomware behavior, even if the virus is 100% brand new.
+            </p>
+
+            <p class="main-text">
+                Modern Endpoint Detection and Response (EDR) systems use machine learning to build a "Baseline" of what
+                is normal. Once the baseline is set, any deviation is flagged. This is the only effective way to stop
+                Zero-Day exploits which have no known signature.
+            </p>
+
+            <div class="usage-box">
+                <h4>CLI Usage Workflow:</h4>
+                <div class="code-snippet">
+                    <span style="color: #64748b;"># Run an AI analyzer against system logs to find hidden persistent
+                        threats</span><br>
+                    <span style="color: #f8fafc;">$ ai-log-hunt --source /var/log/auth.log --deep-scan
+                        --predict-origin</span><br><br>
+                    <span style="color: #fbbf24;">[INFO]:</span> Analyzing login sequences... <br>
+                    <span style="color: #f87171;">[ALERT]:</span> Detected 98% probability of credential spraying from
+                    IP 192.168.1.45.
+                </div>
+            </div>
+
+            <div class="pro-tip">
+                <p style="margin: 0; color: var(--text-main); font-weight: 600;">Pro Security Tip: Don't just rely on
+                    alerts. Use AI to "Hunter-Gather" metadata. The most dangerous threats are survivors who hide in the
+                    'noise' of traditional security alerts.</p>
+            </div>
+        </div>
+
+        <!-- 2. Pentesting -->
+        <div class="content-section animate" style="animation-delay: 0.25s;">
+            <div class="section-header">
+                <h2>Automated Penetration Testing</h2>
+            </div>
+            <p class="main-text">
+                Penetration testing is being revolutionized by AI Agents. These are not just scripts; they are
+                goal-oriented programs. You give the agent a target (e.g., a corporate domain), and it decides which
+                tools to run. If an Nmap scan finds an open port, the AI realizes it needs to run a vulnerability
+                scanner. If that scanner finds a SQL injection point, the AI drafts the exploit.
+            </p>
+
+            <p class="main-text">
+                This "Orchestration" is the killer feature. Instead of a human spending 4 hours doing reconnaissance,
+                the AI does it in 4 minutes, allowing the human tester to focus on the truly complex logic flaws that
+                require creative thinking.
+            </p>
+
+            <div class="usage-box">
+                <h4>Automated Agent Workflow:</h4>
+                <div class="code-snippet">
+                    <span style="color: #64748b;"># Initialize a stateful AI pentest agent</span><br>
+                    <span style="color: #f8fafc;">$ pentest-gpt start --target staging.cyberjai.com</span><br><br>
+                    <span style="color: #fbbf24;">[AGENT]:</span> Phase 1 Recon complete. 3 services found. <br>
+                    <span style="color: #fbbf24;">[AGENT]:</span> Analyzing service 'Jenkins' on Port 8080. <br>
+                    <span style="color: #4ade80;">[AGENT]:</span> Found misconfiguration in Groovy script console.
+                    Exploit ready.
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. LLMs -->
+        <div class="content-section animate" style="animation-delay: 0.3s;">
+            <div class="section-header">
+                <h2>AI/LLMs for Secure Coding</h2>
+            </div>
+            <p class="main-text">
+                Large Language Models (LLMs) like Claude or GPT-4 have read more code than any human ever will. They
+                understand the patterns of "Bad Code." By integrating AI into the developer workflow, we can catch
+                vulnerabilities before they are ever compiled.
+            </p>
+
+            <p class="main-text">
+                The key is specialized prompting. A developer can ask the AI to "Think like a hacker" and review their
+                pull request. The AI can then identify missing input sanitization or hardcoded API keys that a human
+                reviewer might miss during a long day of coding.
+            </p>
+
+            <div class="interface-card" style="border-style: dashed; margin: 3rem 0;">
+                <h4 style="color: var(--accent); margin-top:0;">Example Security Prompt for LLMs:</h4>
+                <p style="color: var(--text-muted); font-size: 1.1rem; line-height: 1.6;">
+                    Analyze the following Python Flask route for Cross-Site Scripting (XSS) and SQL Injection. Pay close
+                    attention to how user-provided search terms are handled in the template rendering and database
+                    queries. Suggest a secure alternative using parameterized queries and HTML escaping.
+                </p>
+            </div>
+        </div>
+
+        <!-- 4. UBA -->
+        <div class="content-section animate" style="animation-delay: 0.35s;">
+            <div class="section-header">
+                <h2>User Behavior Analytics (UBA)</h2>
+            </div>
+            <p class="main-text">
+                UBA is where AI helps stop the "Insider Threat." It is not about the external hacker, but the hacked
+                account or the malicious employee. AI builds a "Life Map" of an employee's digital activity. It knows
+                what time Joe usually logs in, which servers he touches, and how much data he usually uploads.
+            </p>
+
+            <p class="main-text">
+                If Joe's account suddenly logs in at 3 AM from a new country and tries to download the entire customer
+                database, the AI doesn't wait for an admin—it automatically locks the account in milliseconds. This is
+                known as Autonomous Response.
+            </p>
+
+            <div class="usage-box">
+                <h4>UI Dashboard Logic:</h4>
+                <div style="background: rgba(0,0,0,0.5); padding: 1.5rem; border-radius: 8px;">
+                    <p style="color: #f87171; font-weight: 700; margin-top: 0;">AI ANOMALY DETECTED</p>
+                    <p style="color: var(--text-main); margin: 0.5rem 0;">User: marketing_admin_01</p>
+                    <p style="color: var(--text-muted); margin: 0.5rem 0;">Deviation: Sudden access to HR-Database
+                        (never accessed before).</p>
+                    <p style="color: #4ade80; margin-top: 1rem; font-weight: 700;">STATUS: Account Isolated by AI Agent.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5. Asset Discovery -->
+        <div class="content-section animate" style="animation-delay: 0.4s;">
+            <div class="section-header">
+                <h2>AI-Powered Asset Discovery</h2>
+            </div>
+            <p class="main-text">
+                Modern companies have massive "Attack Surfaces." Between cloud servers, remote worker laptops, and IoT
+                devices, it's impossible to track everything. AI tools scan the entire internet to find things that
+                belong to you but aren't being protected.
+            </p>
+            <p class="main-text">
+                This is often called "Shadow IT." An AI can scan billions of IP addresses and look for certificates or
+                domain names that match your brand. If it finds a forgotten server running a 5-year-old database, it
+                alerts you before a hacker finds it.
+            </p>
+        </div>
+
+        <div class="animate" style="animation-delay: 0.5s; text-align: center; margin-top: 8rem;">
+            <h2 style="font-size: 3rem; color: var(--text-main); margin-bottom: 3rem;">The AI Security Arsenal</h2>
+
+            <div class="tool-grid">
+                <div class="tool-card">
+                    <h3>Darktrace</h3>
+                    <p style="color: var(--text-muted);">The leader in autonomous defense. It uses unsupervised learning
+                        to stop attacks in progress without human help.</p>
+                </div>
+                <div class="tool-card">
+                    <h3>PentestGPT</h3>
+                    <p style="color: var(--text-muted);">A powerful CLI agent that allows hackers to use LLMs as a
+                        strategic brain during a penetration test.</p>
+                </div>
+                <div class="tool-card">
+                    <h3>CrowdStrike</h3>
+                    <p style="color: var(--text-muted);">An industry-standard UI platform that uses AI to detect malware
+                        and breaches across millions of devices globally.</p>
+                </div>
+                <div class="tool-card">
+                    <h3>Wazuh</h3>
+                    <p style="color: var(--text-muted);">The best open-source starting point. Combines log analysis and
+                        security monitoring with built-in AI correlation.</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-top: 10rem; padding: 4rem; background: linear-gradient(135deg, rgba(178, 195, 167, 0.05), transparent); border-radius: 24px; border: 1px solid var(--accent); text-align: center;"
+            class="animate">
+            <h2 style="color: var(--accent); font-size: 2.5rem; margin-top: 0;">Final Conclusion</h2>
+            <p class="main-text" style="max-width: 800px; margin: 2rem auto;">
+                AI is the greatest force multiplier in cybersecurity history. Whether you are using the CLI to automate
+                an exploit or a UI to monitor a global network, Artificial Intelligence is your most powerful ally. Stay
+                ethical, continue learning, and use these tools to build a safer digital world.
+            </p>
+            <a href="tools.html"
+                style="background: var(--accent); color: #000; padding: 1.5rem 3.5rem; border-radius: 12px; font-weight: 900; text-decoration: none; display: inline-block; transition: 0.3s ease; font-size: 1.2rem;"
+                onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                Return to Tools Suite
+            </a>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
